@@ -1,0 +1,97 @@
+.sidebar{
+	margin-right: 5px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	.countries{		
+	
+		.event{
+			padding-left: 40px;
+			background: #ccc;
+			color:#333;
+			font-weight: normal;
+			border-radius: 4px;
+			margin-left: 2px;
+			margin-right: 2px;
+			margin-top: 2px;
+			.time{
+				display: inline-block;
+				font-weight: normal;
+				vertical-align: top;
+				float: right;
+				background-color:#eee;
+				margin-right: 3px;
+				height: 20px;
+				line-height: 20px;
+				margin-top: 10px;
+				padding-left: 9px;
+				color:black;
+				border-radius: 6px;
+				padding-right: 8px;
+
+			
+			}
+		}
+		flex:1;
+		.country{
+			height: 40px;
+			background: #444;
+			color:white;
+			font-weight: bold;
+			line-height: 40px;
+			&.open{
+				height: auto;
+			}
+			.flag{
+				display: inline-block;
+				vertical-align: top;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+	;
+		}
+	}
+	.raceTypes{
+		display: flex;
+		height: 40px;
+		border:1px solid #222;
+		position: relative;
+		top:0px;
+		.raceType{
+			flex:1;
+			background: #333;
+			&.center{
+				border-left: 1px solid #222;
+				border-right: 1px solid #222;
+			}
+		}
+	}
+	.tabs{
+		height: 80px;
+		line-height: 80px;		
+		width: 100%;
+		display: flex;
+		.tab{
+			text-align: center;
+			flex:2;
+			font-weight: bold;
+			background: #e5e5e5; /* Old browsers */
+			background: -moz-linear-gradient(45deg, #e5e5e5 0%, #ffffff 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(45deg, #e5e5e5 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(45deg, #e5e5e5 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			border:1px solid #ddd;
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+			&.active{
+				background: #222;
+				border:1px solid #222;
+				color:white;
+				box-shadow: inset 0px 6px 0px 0px orange;
+			}
+			&.calendar{
+				flex:1.5;
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+
+
+	.head{		
+		background: #333;
+		color:white;
+		border-top-right-radius: 8px;
+		border-top-left-radius: 8px;
+	}
+	.row{
+		display: flex;
+	}
+	.body{
+		
+		.row{
+			border-bottom: 1px solid #666;
+			&:last-child{
+				border-bottom: none;
+			}
+		}
+	}
+	.cell{
+		.arrow{
+		position: absolute;
+		display: inline-block;
+		line-height: 0;
+		bottom:-7px;
+		font-size: 22px;
+		}
+	
+		position: relative;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		flex:1;
+		border-right: 1px solid #666;
+		&:last-child{
+			border-right: 0;
+		}
+		&.bigger{
+			flex:2;
+		}
+		&.center{
+			text-align: center;
+			padding-left: ;
+		}
+		min-width: 0;
+		&.num{
+			padding-left: 0;
+			width: 50px;
+			flex:none;
+			text-align: center;
+		}
+	
+	}
