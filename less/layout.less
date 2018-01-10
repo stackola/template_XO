@@ -73,7 +73,7 @@ body, html{
 			justify-content: center;
 			flex-direction: row;
 			.switchRacesButton{
-				flex:1;
+				flex:1;				
 				margin-top: 5px;
 				margin-bottom: 5px;
 				width: 45px;
@@ -84,13 +84,38 @@ body, html{
 				border-radius: 5px;
 				text-align: center;
 				line-height: 45px;
-				background: green;
-				color:white;
+				
+				color:#eee;
+
+				
+				background-image: -moz-linear-gradient(#85c53e,#70a732);
+				background-image: -webkit-linear-gradient(#85c53e,#70a732);
+				background-image: linear-gradient(#85c53e,#70a732);
+				-moz-box-shadow: #b0d981 0 1px 0 inset;
+				-webkit-box-shadow: #b0d981 0 1px 0 inset;
+				box-shadow: #b0d981 0 1px 0 inset;
+				border: 1px solid #529121;
+
+
 				&.running{
-					background: orange;
+					
+					background-image: -moz-linear-gradient(orange,#ff8c00);
+					background-image: -webkit-linear-gradient(orange,#ff8c00);
+					background-image: linear-gradient(orange,#ff8c00);
+					-moz-box-shadow: #ffa12e 0 1px 0 inset;
+					-webkit-box-shadow: #ffa12e 0 1px 0 inset;
+					box-shadow: #ffa12e 0 1px 0 inset;
+					border: 1px solid #ff8c00;
 				}
 				&.over{
-					background: red;
+			
+					background-image: -moz-linear-gradient(#ff5029,#ff2f00);
+					background-image: -webkit-linear-gradient(#ff5029,#ff2f00);
+					background-image: linear-gradient(#ff5029,#ff2f00);
+					-moz-box-shadow: #db2800 0 1px 0 inset;
+					-webkit-box-shadow: #db2800 0 1px 0 inset;
+					box-shadow: #db2800 0 1px 0 inset;
+					border: 1px solid #db2800;
 				}
 			}
 		}
@@ -123,7 +148,7 @@ body, html{
 .bigRace{
 	height: 110px;
 	display: flex;
-	margin-top: 6px;
+	padding-top: 6px;
 	background: #e5e5e5; /* Old browsers */
 	background: -moz-linear-gradient(45deg, #e5e5e5 0%, #ffffff 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(45deg, #e5e5e5 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
@@ -132,13 +157,20 @@ body, html{
 	.bigRaceNumberContainer{
 		height: 100px;
 		width: 120px;	
-		background: red;
+		background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0,#85c53e),color-stop(100%,#70a732));
+	    background-image: -moz-linear-gradient(#85c53e,#70a732);
+	    background-image: -webkit-linear-gradient(#85c53e,#70a732);
+	    background-image: linear-gradient(#85c53e,#70a732);
+	    -moz-box-shadow: #b0d981 0 1px 0 inset;
+	    -webkit-box-shadow: #b0d981 0 1px 0 inset;
+	    box-shadow: #b0d981 0 1px 0 inset;
+	    border: 1px solid #529121;
 		border-radius: 8px;
 		margin-left: 20px;
 		.bigRaceNumber{
 
 			.num{
-				height: 74px;
+				height: 68px;
 				line-height: 74px;
 				font-size: 45px;
 				font-weight: bold;
@@ -194,5 +226,12 @@ body, html{
 	font-size: 25px;
 	color:black;
 	border-radius: 3px;
-	background: orange;
+	background-image: -webkit-linear-gradient(#ffdd86,#f8ae17);
+    background-image: linear-gradient(#ffdd86,#f8ae17);
+    -moz-box-shadow: #ffe8ac 0 1px 0 inset;
+    -webkit-box-shadow: #ffe8ac 0 1px 0 inset;
+    box-shadow: #ffe8ac 0 1px 0 inset;
+    border: 1px solid #f2c71c;
+    cursor: pointer;
+    border-color: #f2c71c;
 }
