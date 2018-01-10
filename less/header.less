@@ -1,106 +1,212 @@
-.header{
+.header {
 	display: flex;
-	flex:1;
-	min-height:0;
-	.headerSidebar{
-		flex:1;
-		display: flex;		
-		align-items: center;	
-		.logo{
-			flex:4;
-			img{
-				padding-left: 30px;
-				height: 93px;
-				padding-top: 8px;	
+	flex: 1;
+	min-height: 0;
+
+	.headerSidebar {
+		flex: 0.8;
+		display: flex;
+		align-items: center;
+
+		.logo {
+			flex: 4;
+
+			img {
+				padding-left: 16px;
+				height: 116px;
+				padding-top: 15px;
 			}
 
 		}
-		.time{			
-			flex:1;
-			padding-left: 4px;
-			padding-right: 4px;
+
+		.time {
+			flex: 1;
+			padding-left: 8px;
+			padding-right: 8px;
 			text-align: center;
 			align-self: flex-end;
-			height: 26px;
-			line-height: 26px;
+			margin-bottom: 10px;
+			height: 40px;
+			line-height: 40px;
 			background: #eee;
-			font-size: 14px;
-			box-shadow: 0px -1px 6px 0px #777; 
+			font-size: 16px;
+			box-shadow: 0px -1px 6px 0px #777;
 			border-radius: 2px;
 		}
+
 	}
-	.mainHeader{
-		flex:4;
+
+	.mainHeader {
+		flex: 4;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		.spacer{
-			flex:1;
+
+		.spacer {
+			flex: 1;
 		}
-		.buttons{
-			flex:3;
+
+		.guthabenButton {
+			width: 200px;
+			line-height: 82px;
+			display: flex;
+			height: 82px;
+			border-radius: 41px;
+			background: #aaa; /* Old browsers */
+			background: -moz-linear-gradient(-145deg, #aaa 0%, #ffffff 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(-145deg, #aaa 0%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(-145deg, #aaa 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			border: 1px solid #555;
+			.text{
+				text-align: center;
+				font-weight: bold;
+				font-size: 18px;
+				color:#333;
+				flex:1;
+			}
+		}
+
+		.buttons {
+			flex: 3;
 			display: flex;
 			align-content: center;
 			justify-content: center;
-			.smallSpacer{
-				width: 30px;
+
+			.smallSpacer {
+				width: 25px;
 			}
-			.roundButton{
+
+			.roundButton {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 1px solid #555;
+
+				.fa {
+					font-size: 40px;
+					height: 40px;
+				}
+
 				height: 80px;
 				width: 80px;
-				border:1px solid #aaa;
+				line-height: 80px;
+				text-align: center;
+				border: 1px solid #aaa;
 				border-radius: 50%;
 				background: #e5e5e5; /* Old browsers */
 				background: -moz-linear-gradient(45deg, #e5e5e5 0%, #ffffff 100%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(45deg, #e5e5e5 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(45deg, #e5e5e5 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				background: -webkit-linear-gradient(45deg, #e5e5e5 0%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(45deg, #e5e5e5 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				&.turkey{
+					background: red;
+					border: 1px solid black;
+					color:white;
+				}
 			}
+
 		}
-		.nextRaces{	
+
+		.nextRaces {
 			margin-top: 10px;
-			flex:4;
-			border:1px solid #aaa;
-			height: 90%;			
+			flex: 4;
+			border: 1px solid #aaa;
+			height: 90%;
 			border-radius: 12px;
 			text-align: center;
-			.buttons{
+
+			.buttons {
 				display: flex;
 				align-items: center;
-				height: 70%;
+				height: 56%;
 				justify-content: center;
 				width: 94%;
-				margin-left:3%;
-				.nextRacesButton{
+				margin-top: 8px;
+				margin-left: 3%;
+				text-align: left;
+
+				.nextRacesButton {
 					background: #e5e5e5; /* Old browsers */
 					background: -moz-linear-gradient(45deg, #e5e5e5 0%, #ffffff 100%); /* FF3.6-15 */
-					background: -webkit-linear-gradient(45deg, #e5e5e5 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-					background: linear-gradient(45deg, #e5e5e5 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-					border:1px solid #ddd;
-					flex:1;
-					height: 100%;
-					&:first-child{
+					background: -webkit-linear-gradient(45deg, #e5e5e5 0%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(45deg, #e5e5e5 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					border: 1px solid #ddd;
+					flex: 1;
+					height: 99%;
+					display: flex;
+					font-size: 18px;
+					border: 1px solid #555;
+
+					.flag {
+						padding-left: 10px;
+						padding-right: 10px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						img {
+							height: 22px;
+						}
+
+					}
+
+					.text {
+						flex: 1;
+						font-weight: bold;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+
+						.time {
+							font-weight: normal;
+							margin-top: 5px;
+							color: #333;
+							font-size: 16px;
+						}
+
+					}
+
+					.type {
+						flex: 1;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						text-align: center;
+
+						img {
+							height: 30px;
+						}
+
+					}
+
+					&:first-child {
 						border-top-left-radius: 6px;
 						border-bottom-left-radius: 6px;
 					}
-					&:last-child{
+
+					&:last-child {
 						border-top-right-radius: 6px;
 						border-bottom-right-radius: 6px;
 					}
-					
+
 				}
+
 			}
-			.title{
+
+			.title {
 				background: white;
 				display: inline-block;
 				vertical-align: top;
 				height: 20px;
 				position: relative;
-				top:-10px;
+				top: -10px;
 				line-height: 20px;
 				padding-left: 8px;
 				padding-right: 8px;
 			}
-		}		
+
+		}
+
 	}
 
 }
